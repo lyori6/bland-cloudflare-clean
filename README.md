@@ -124,16 +124,8 @@ The following secrets must be configured in the Cloudflare Worker environment:
 *   Enhance `/slack-event` to handle more event types if the worker's responsibilities expand.
 *   Refine Slack message formatting using more advanced Block Kit features.
 *   Add robust input conversion for Pacific Time in `/book-email` using `date-fns-tz` to accurately handle PST/PDT transitions if it becomes a source of issues (currently relies on a fixed offset for parsing, display formatting is accurate).
-*   Implement internal retry logic for calls to ApyHub or SendGrid if transient errors become common.
+*   Implement internal retry logic for calls to ApyHub or SendGrid if transient errors become common. 
 
----
-```
+## 9. License
 
-**Key features of this technical README:**
-
-*   **Audience:** Aimed at developers (including your future self or other engineers) who might work on or integrate with this worker.
-*   **Focus:** Technical details, API contracts, setup, and code structure.
-*   **Conciseness:** Provides necessary information without excessive narrative.
-*   **Actionable:** Includes setup and deployment instructions.
-*   **Forward-Looking:** Mentions security considerations and future enhancements.
-
+MIT License
